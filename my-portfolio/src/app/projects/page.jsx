@@ -7,7 +7,7 @@ const projects = [
 
   { title: "Frankenstory", thumbnail: "/frankenstory-thumb.png", description: "An 'exquisite-corpse' style collaborative storytelling game.", tech: ['express', 'mongoDB', 'react', 'python', 'js', 'html', 'css'], url: "N/A", git: "https://github.com/donkeykong718/frankenstory" },
 
-  { title: "Moo-Cha-Cha", thumbnail: "/moochacha-thumb.png", description: "Collaborated with a UX design team to build a responsive mobile website for a fake ice cream company. Followed their specifications nearly to the pixel.", tech: ['react', 'js', 'html', 'css'], url: "https://sei-uxdi-seven.vercel.app/", git: "https://github.com/donkeykong718/sei-uxdi" },
+  { title: "Moo-Cha-Cha", thumbnail: "/moochacha-thumb.png", description: "Collaborated with a UX design team to build a responsive mobile website for a fake ice cream company. Followed their specifications to the pixel.", tech: ['react', 'js', 'html', 'css'], url: "https://moo-cha-cha.vercel.app/", git: "https://github.com/donkeykong718/sei-uxdi" },
 
   { title: "BuyU", thumbnail: "/buyu-thumb.png", description: "Building a web application in conjunction with the AFL-CIO that will identify whether any given product is made by union labor. As part of that, assisting in the creation of a national database of union-made projects.", tech: ['express', 'mongoDB', 'js', 'html', 'css'], url: "https://buyu.vercel.app/", git: "https://github.com/donkeykong718/BuyU" },
 
