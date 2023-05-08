@@ -24,12 +24,12 @@ export default function RootLayout({ children }) {
         /> */}
 
         <Navbar />
-        <Splash />
-        <Story />
+        {children}
+        {/* <Story />
         <Skills />
         <Projects />
         <Resume />
-        <Contact />
+        <Contact /> */}
       </body>
     </html>
   );
