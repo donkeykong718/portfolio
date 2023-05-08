@@ -63,7 +63,7 @@ export default function Home() {
         <h2>Software Engineer</h2>
         <Image src={'/assets/NYBG Headshot.jpg'}
           width={4032}
-          height={3024} 
+          height={3024}
           alt="headshot" style={{ height: '400px', width: 'auto' }} />
       </header>
       <h3>About Me</h3>

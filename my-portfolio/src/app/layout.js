@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
           alt="under construction"
           style={{ width: '100vw', height: 'auto', maxHeight: '250px', display: 'flex' }}
         /> */}
+
         <Navbar />
         {children}
       </body>
