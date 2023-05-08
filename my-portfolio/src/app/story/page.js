@@ -1,4 +1,4 @@
-export default function about() {
+export default function story() {
 
   return (
     <>
@@ -9,7 +9,7 @@ export default function about() {
 
       <h3>SKILLS</h3>
       <p>Tech Stack: Python, Django, Flask, Express.js, React, Next.js, PostgreSQL, MongoDB, Mongoose, Node.js, JavaScript, HTML, CSS </p>
-      <p>Film Industry - Final Draft, Final Cut, Scenechronize, Movie Magic, Prodigal (Netflix)</p>
+      <p>Film Industry Software: Final Draft, Final Cut, Scenechronize, Movie Magic, Prodigal (Netflix)</p>
     </>
   )
 }

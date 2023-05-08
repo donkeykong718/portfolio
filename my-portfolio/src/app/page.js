@@ -10,7 +10,7 @@ export default function Home() {
       <header style={{ textAlign: 'center' }}>
         <h1>David Koll</h1>
         <h2>Software Engineer</h2>
-        <Image src={'/NYBG Headshot.jpg'}
+        <Image src={'/assets/NYBG Headshot.jpg'}
           width={4032}
           height={3024}
           alt="headshot" style={{ height: '400px', width: 'auto' }} />
