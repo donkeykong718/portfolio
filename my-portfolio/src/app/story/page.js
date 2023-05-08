@@ -22,7 +22,6 @@ export default function story() {
             grammatical mistakes to go unremarked upon, keeping my tongue out of
             my cheek, accepting compliments, networking, basketball.
           </p>
-
           <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out some of my latest projects.
           </p>
@@ -37,17 +36,7 @@ export default function story() {
           />
         </div>
       </div>
-      {/* <h1>About Me</h1>
 
-      <h3>SKILLS</h3>
-      <p>
-        Tech Stack: Python, Django, Flask, Express.js, React, Next.js,
-        PostgreSQL, MongoDB, Mongoose, Node.js, JavaScript, HTML, CSS{" "}
-      </p>
-      <p>
-        Film Industry Software: Final Draft, Final Cut, Scenechronize, Movie
-        Magic, Prodigal (Netflix)
-      </p> */}
     </div>
   );
 }

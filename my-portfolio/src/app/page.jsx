@@ -18,10 +18,19 @@ export default function Home() {
             LET&apos;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I&apos;m <span className="text={#5651e5}">David Koll</span>
+            Hi, I&apos;m <span className="text-[#5651e5]">David Koll</span>
           </h1>
-          <h1 className="py-4 text-gray-700">Full-stack Developer</h1>
-          <p className="py-4 text-gray-600 max-w-{70%} m-auto">
+          <div className="flex justify-center items-center">
+            <Image
+              src={"/assets/NYBG Headshot.jpg"}
+              width={4032}
+              height={3024}
+              alt="headshot"
+              style={{ height: "200px", width: "auto" }}
+            />
+          </div>
+          <h1 className="py-2 text-gray-700">A Full-stack Developer</h1>
+          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             Great at: systems and structures, attention to detail, putting out
             fires, stepping into leadership roles when needed, being that guy to
             whom everyone can turn when they need to know what&apos;s actually
@@ -29,7 +38,7 @@ export default function Home() {
             down and doing the damn thing, word games.
           </p>
 
-          <p className="py-4 text-gray-600 max-w-{70%} m-auto">
+          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             Not so great at: selling myself, using buzzwords, allowing
             grammatical mistakes to go unremarked upon, keeping my tongue out of
             my cheek, accepting compliments, networking, basketball.

@@ -21,8 +21,8 @@ export default function Navbar() {
         {/* <Image
           src="/assets/navigating.png"
           alt="navigating"
-          width='65'
-          height='65'
+          width="65"
+          height="65"
         /> */}
         <div>
           <ul className="hidden md:flex">
@@ -33,6 +33,9 @@ export default function Navbar() {
               <li className="ml-10 text-sm uppercase hover:border-b">
                 My Story
               </li>
+            </Link>
+            <Link href="/skills">
+              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
@@ -94,6 +97,9 @@ export default function Navbar() {
               </Link>
               <Link href="/story">
                 <li className="py-4 text-sm">My Story</li>
+              </Link>
+              <Link href="/skills">
+                <li className="py-4 text-sm">Skills</li>
               </Link>
               <Link href="/projects">
                 <li className="py-4 text-sm">Projects</li>
