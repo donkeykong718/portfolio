@@ -56,7 +56,7 @@ const projects = [
     title: "BuyPass",
     thumbnail: "",
     description:
-      "Built a web application that searches Amazon’s database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies’ individual websites",
+      "Built a web application that searches Amazon's database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies'; individual websites",
     tech: ["vanilla js", "html", "css"],
     url: "N/A",
     git: "https://github.com/donkeykong718/Buy-Pass",
