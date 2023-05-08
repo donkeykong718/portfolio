@@ -1,6 +1,6 @@
-import "../globals.css";
+// import "../globals.css";
 
-import Project from "./Project";
+import Project from "../app/projects/Project";
 
 const projects = [
   {
@@ -63,7 +63,7 @@ const projects = [
   },
 ];
 
-export default function page() {
+export default function Projects() {
   return (
     <div className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">

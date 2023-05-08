@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import "./globals.css";
+// import "./globals.css";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
