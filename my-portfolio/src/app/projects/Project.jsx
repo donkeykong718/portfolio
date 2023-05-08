@@ -19,7 +19,7 @@ export default function Project({ project }) {
           {title}
         </h3>
         <p className="pb-4 pt-2 text-white text-center">
-          PROP: type of project ex. "react js"
+          PROP: type of project ex. &ldquo;react js&rdquo;
         </p>
         <Link href={url}>
           <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
