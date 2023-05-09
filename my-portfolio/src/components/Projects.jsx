@@ -8,7 +8,7 @@ const projects = [
     route: "asl",
     thumbnail: "/projects/asl_thumb.png",
     description:
-      "Party like it's 1998 with this throwback to the heydey of AOL chatrooms. Make a screenname, make a chat, make friends! Just don't tell anyone your real A/S/L (it was a simpler time.)",
+      "Party like it&apos;s 1998 with this throwback to the heydey of AOL chatrooms. Make a screenname, make a chat, make friends! Just don't tell anyone your real A/S/L (it was a simpler time.)",
     tech: [
       "django",
       "django channels",
@@ -28,7 +28,8 @@ const projects = [
     title: "Frankenstory",
     route: "frankenstory",
     thumbnail: "/projects/frankenstory_thumb.jpeg",
-    description: "An 'exquisite-corpse' style collaborative storytelling game.",
+    description:
+      "An &lsquo;exquisite-corpse&rsquo; style collaborative storytelling game.",
     tech: ["express", "mongoDB", "react", "python", "js", "html", "css"],
     url: "N/A",
     git: "https://github.com/donkeykong718/frankenstory",
@@ -75,7 +76,7 @@ export default function Projects() {
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-4">What I've Built</h2>
+        <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Project project={project} key={index} />
