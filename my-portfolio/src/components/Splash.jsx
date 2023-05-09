@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import ContactBox from "./ContactBox";
 
 export default function Splash() {
   return (
@@ -38,20 +40,7 @@ export default function Splash() {
             grammatical mistakes to go unremarked upon, keeping my tongue out of
             my cheek, accepting compliments, networking, basketball.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedin />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsPersonLinesFill />
-            </div>
-          </div>
+          <ContactBox mobile="false" />
         </div>
       </div>
     </div>
