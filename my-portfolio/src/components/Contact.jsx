@@ -7,8 +7,8 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 export default function Contact() {
   return (
-    <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+    <div id="contact" className="pt-20 w-full lg:h-screen">
+      <div className="max-w-[1240px] m-auto px-2 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
@@ -20,7 +20,7 @@ export default function Contact() {
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="/assets/navigating.jpeg"
+                  src="/assets/navigating.png"
                   width={200}
                   height={200}
                   alt="photo"

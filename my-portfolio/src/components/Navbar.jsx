@@ -7,10 +7,27 @@ import Image from "next/image";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const pathname = usePathname();
+
+  useEffect(() => {
+    console.log(pathname.substring(0, 9));
+    if (pathname.substring(0, 9) === "/projects") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+      console.log("It should be transparent");
+      console.log(linkColor);
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [pathname]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -29,6 +46,7 @@ export default function Navbar() {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -36,15 +54,17 @@ export default function Navbar() {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        {/* <Image
-          src="/assets/navigating.png"
-          alt="navigating"
-          width="65"
-          height="65"
-        /> */}
+        <Link href="/">
+          <Image
+            src="/assets/DK_logo.png"
+            alt="DK logo"
+            width="64"
+            height="64"
+          />
+        </Link>
         <div>
-          <ul className="hidden md:flex">
-            <Link href="/">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+            <Link href="/#splash">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
             <Link href="/#story">
@@ -89,12 +109,14 @@ export default function Navbar() {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              {/* <Image
-                src="/assets/navigating.png"
-                alt="navigating"
-                width="87"
-                height="35"
-              /> */}
+              <Link href="/">
+                <Image
+                  src="/assets/DK_logo.png"
+                  alt="DK logo"
+                  width="64"
+                  height="64"
+                />
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -108,25 +130,67 @@ export default function Navbar() {
               </p>
             </div>
           </div>
-          <div className="py4 flex flex-col">
+          <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Home
+                </li>
               </Link>
-              <Link href="/story">
-                <li className="py-4 text-sm">My Story</li>
+              <Link href="/#story">
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  My Story
+                </li>
               </Link>
-              <Link href="/skills">
-                <li className="py-4 text-sm">Skills</li>
+              <Link href="/#skills">
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Skills
+                </li>
               </Link>
-              <Link href="/projects">
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#projects">
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Projects
+                </li>
               </Link>
-              <Link href="/resume">
-                <li className="py-4 text-sm">Resume</li>
+              <Link href="/#resume">
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Resume
+                </li>
               </Link>
-              <Link href="/contact">
-                <li className="py-4 text-sm">Contact</li>
+              <Link href="/#contact">
+                <li
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                  className="py-4 text-sm"
+                >
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">

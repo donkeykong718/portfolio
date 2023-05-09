@@ -1,10 +1,11 @@
 // import "../globals.css";
 
-import Project from "../app/projects/Project";
+import Project from "./Project";
 
 const projects = [
   {
     title: "A/S/L?",
+    route: "asl",
     thumbnail: "/projects/asl_thumb.png",
     description:
       "Party like it's 1998 with this throwback to the heydey of AOL chatrooms. Make a screenname, make a chat, make friends! Just don't tell anyone your real A/S/L (it was a simpler time.)",
@@ -25,6 +26,7 @@ const projects = [
 
   {
     title: "Frankenstory",
+    route: "frankenstory",
     thumbnail: "/projects/frankenstory_thumb.jpeg",
     description: "An 'exquisite-corpse' style collaborative storytelling game.",
     tech: ["express", "mongoDB", "react", "python", "js", "html", "css"],
@@ -34,6 +36,7 @@ const projects = [
 
   {
     title: "Moo-Cha-Cha",
+    route: "moo-cha-cha",
     thumbnail: "/projects/moochacha-thumb.jpeg",
     description:
       "Collaborated with a UX design team to build a responsive mobile website for a fake ice cream company. Followed their specifications to the pixel.",
@@ -44,6 +47,7 @@ const projects = [
 
   {
     title: "BuyU",
+    route: "buyu",
     thumbnail: "/projects/buyu-thumb.png",
     description:
       "Building a web application in conjunction with the AFL-CIO that will identify whether any given product is made by union labor. As part of that, assisting in the creation of a national database of union-made projects.",
@@ -54,6 +58,7 @@ const projects = [
 
   {
     title: "BuyPass",
+    route: "buypass",
     thumbnail: "",
     description:
       "Built a web application that searches Amazon&apos;s database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies&apos; individual websites",
@@ -65,8 +70,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
+    <div id="projects" className="pt-20 w-full">
+      <div className="max-w-[1240px] mx-auto px-2">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
