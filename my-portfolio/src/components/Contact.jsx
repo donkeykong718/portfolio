@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import ContactBox from "./ContactBox";
 
 export default function Contact() {
   return (
@@ -36,20 +37,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
-                <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedin />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
-                </div>
+                <ContactBox mobile="false" />
               </div>
             </div>
           </div>
@@ -111,20 +99,6 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* <ul>
-            <li>
-              <Link href="mailto: koll.david@gmail.com">E-mail</Link>
-            </li>
-            <li>
-              <Link href="https://www.linkedin.com/in/davidkoll/">
-                LinkedIn
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link href="https://github.com/donkeykong718/">GitHub</Link>
-            </li>
-          </ul> */}
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursort-pointer hover:scale-110 ease-in duraction-300">
