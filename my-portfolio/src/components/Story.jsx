@@ -3,8 +3,13 @@ import Link from "next/link";
 
 export default function Story() {
   return (
-    <>
-      <div>
+    <div className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8">
+      <div className="col-span-2">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+          Story
+        </p>
+        <h2 className="py-4">Who I Am</h2>
+
         <p className="py-2 text-gray-600">
           Great at: systems and structures, attention to detail, putting out
           fires, stepping into leadership roles when needed, being that guy to
@@ -24,7 +29,8 @@ export default function Story() {
           </p>
         </Link>
       </div>
-      <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+
+      <div className="col-start-3 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
         <Image
           className="rounded-xl"
           src={"/assets/NYBG Headshot.jpg"}
@@ -33,6 +39,6 @@ export default function Story() {
           alt="headshot"
         />
       </div>
-    </>
+    </div>
   );
 }

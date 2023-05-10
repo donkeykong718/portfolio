@@ -46,15 +46,7 @@ export default function Section({ section }) {
     <>
       {navId === "story" ? (
         <div id={navId} className={d1Class}>
-          <div className={d2Class}>
-            <div className="col-span-2">
-              <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-                {header}
-              </p>
-              <h2 className="py-4">{subheader}</h2>
-              {activeSection}
-            </div>
-          </div>
+          {activeSection}
         </div>
       ) : (
         <div id={navId} className={d1Class}>
