@@ -2,12 +2,7 @@ import Link from "next/link";
 
 export default function Resume() {
   return (
-    <div id="resume" className="pt-20 w-full lg:h-full p-2">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Resume
-        </p>
-        <h2 className="py-4">What I&apos;ve Done</h2>
+   <>
         <object
           data="/uploads/David_Koll_Resume.pdf"
           type="application/pdf"
@@ -15,7 +10,6 @@ export default function Resume() {
           height="500px"
         />
         <Link href="/uploads/David_Koll_Resume.pdf">Download as PDF</Link>
-      </div>
-    </div>
+    </>
   );
 }

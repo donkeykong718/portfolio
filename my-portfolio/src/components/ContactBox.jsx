@@ -5,9 +5,8 @@ import Link from "next/link";
 
 export default function ContactBox({ mobile }) {
   const mobileContain =
-    "flex items-center justify-between max-w-[330px] m-auto py-4";
-  const deskContain =
-    "flex items-center justify-between my-4 w-full sm:w-[80%]";
+    "flex items-center justify-even max-w-[330px] m-auto py-4";
+  const deskContain = "flex items-center justify-even my-4 w-full sm:w-[80%]";
 
   const mobileLink =
     "rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300";

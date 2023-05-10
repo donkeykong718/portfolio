@@ -10,9 +10,6 @@ export default function Menu({ mobile, link }) {
 
   const { nav, setNav } = useContext(NavContext);
 
-  console.log(link);
-  console.log(mobile);
-
   return (
     <Link href={`/${navId}`}>
       <li

@@ -5,8 +5,15 @@ import React, { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
+import { usePathname } from "next/navigation";
 
-export default function page() {
+export default function page({ project }) {
+  console.log("The project is:");
+  console.log(project);
+
+  const pathname = usePathname();
+  console.log(pathname);
+
   // const { selection, setSelection } = useContext(ProjectContext);
 
   // const { title, route, thumbnail, description, tech, url, git } = selection;
