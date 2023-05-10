@@ -13,9 +13,9 @@ export default function Project({ project }) {
   // const [selection, setSelection] = useState(project);
 
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+    <div className="relative flex items-center justify-center h-auto w-screen shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] md:w-[45vw]">
       <Image
-        className="rounded-xl group-hover:opacity-10 w-[100] h-auto"
+        className="relativerounded-xl group-hover:opacity-10 w-[100] h-auto"
         src={thumbnail}
         width={1000}
         height={800}
@@ -28,30 +28,11 @@ export default function Project({ project }) {
         <p className="pb-4 pt-2 text-white text-center">
           PROP: type of project ex. &ldquo;react js&rdquo;
         </p>
-        {/* <ProjectContext.Provider value={{ selection, setSelection }}> */}
-        <Link
-          // onClick={() => setSelection(project)}
-          href={`/projects//${route}`}
-        >
+        <Link href={`/projects//${route}`}>
           <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
             More Info
           </p>
         </Link>
-        {/* </ProjectContext.Provider> */}
-        {/* <p>{description}</p>
-        <div>
-          Tech stack:
-          {tech.map((tech, index) => (
-            <TechStack tech={tech} key={index} />
-          ))}
-        </div> */}
-        {/* <div>{description}</div> */}
-        {/* <p>
-          Deployed: <Link href={url}>{url}</Link>
-        </p>
-        <p>
-          Github: <Link href={git}>{git}</Link>
-        </p> */}
       </div>
     </div>
   );

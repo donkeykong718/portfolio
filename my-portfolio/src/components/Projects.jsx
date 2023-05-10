@@ -71,18 +71,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="pt-20 w-full">
-      <div className="max-w-[1240px] mx-auto px-2">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Projects
-        </p>
-        <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <Project project={project} key={index} />
-          ))}
-        </div>
-      </div>
+    <div className="grid max-w-screen md:grid-cols-2 gap-8">
+      {projects.map((project, index) => (
+        <Project project={project} key={index} />
+      ))}
     </div>
   );
 }

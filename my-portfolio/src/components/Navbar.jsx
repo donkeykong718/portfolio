@@ -1,12 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import Image from "next/image";
-// import "./globals.css";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { usePathname } from "next/navigation";
 
 import ContactBox from "./ContactBox";
@@ -32,7 +27,7 @@ export default function Navbar() {
   ];
 
   useEffect(() => {
-    console.log(pathname.substring(0, 9));
+    // console.log(pathname.substring(0, 9));
     if (pathname.substring(0, 9) === "/projects") {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
