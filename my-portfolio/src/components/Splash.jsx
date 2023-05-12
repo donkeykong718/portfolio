@@ -27,18 +27,22 @@ export default function Splash() {
             />
           </div>
           <h1 className="py-2 text-gray-700">A Full-stack Developer</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            Great at: systems and structures, attention to detail, putting out
-            fires, stepping into leadership roles when needed, being that guy to
-            whom everyone can turn when they need to know what&apos;s actually
-            going on, following instructions, general competence, just sitting
-            down and doing the damn thing, word games.
-          </p>
-
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            Not so great at: selling myself, using buzzwords, allowing
-            grammatical mistakes to go unremarked upon, keeping my tongue out of
-            my cheek, accepting compliments, networking, basketball.
+          <p className="py-4 text-gray-600 max-w-[70%] text-left m-auto">
+            I am a versatile professional with a passion for software
+            engineering. I recently completed a Software Engineering Fellowship
+            at General Assembly, where I developed skills in front-end and
+            back-end web development, full-stack development, JavaScript, and
+            React.js.<br></br>
+            <br></br> Prior to that, I spent several years working in the film
+            and television industry, where I often collaborated with tech
+            departments to create and improve large-scale systems. I had the
+            pleasure of creating Marvel's first secure script distribution
+            system, working closely with Netflix to improve their in-house
+            production software, and automating the COVID testing protocols on
+            "Inventing Anna." <br></br>
+            <br></br>I am excited to bring my unique combination of software
+            engineering and production experience to new projects and
+            challenges.
           </p>
           <ContactBox mobile="false" />
         </div>
