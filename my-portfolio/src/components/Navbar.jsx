@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { usePathname } from "next/navigation";
 
 import ContactBox from "./ContactBox";
 import MenuLink from "./MenuLink";
@@ -13,9 +12,6 @@ export const NavContext = React.createContext();
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
-  const pathname = usePathname();
 
   const links = [
     { display: "Home", navId: "#splash" },
@@ -25,17 +21,6 @@ export default function Navbar() {
     { display: "Resume", navId: "#resume" },
     { display: "Contact", navId: "#contact" },
   ];
-
-  useEffect(() => {
-    // console.log(pathname.substring(0, 9));
-    if (pathname.substring(0, 9) === "/projects") {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
-    } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-    }
-  }, [pathname]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -55,7 +40,7 @@ export default function Navbar() {
   return (
     <NavContext.Provider value={{ nav, setNav }}>
       <div
-        style={{ backgroundColor: `${navBg}` }}
+        style={{ backgroundColor: "#ecf0f3" }}
         className={
           shadow
             ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -66,7 +51,7 @@ export default function Navbar() {
           <HomeLink />
           <div>
             <ul
-              style={{ color: `${linkColor}` }}
+              style={{ color: "#1f2937" }}
               className="hidden md:flex text-sm uppercase"
             >
               {links.map((link, index) => (
