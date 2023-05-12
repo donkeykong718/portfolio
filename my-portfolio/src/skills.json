@@ -1,0 +1,16 @@
+[
+  { "name": "CSS", "logo": "/skills/css.png" },
+  { "name": "Django", "logo": "/skills/django.png" },
+  { "name": "Express JS", "logo": "/skills/expressjs.png" },
+  { "name": "Flask", "logo": "/skills/flask.png" },
+  { "name": "Github", "logo": "/skills/github.png" },
+  { "name": "HTML", "logo": "/skills/html.png" },
+  { "name": "JavaScript", "logo": "/skills/js.png" },
+  { "name": "Mongo dB", "logo": "/skills/mongo.png" },
+  { "name": "Next JS", "logo": "/skills/nextjs.png" },
+  { "name": "Node JS", "logo": "/skills/node.png" },
+  { "name": "Postgre SQL", "logo": "/skills/postgresql.png" },
+  { "name": "Python", "logo": "/skills/python.png" },
+  { "name": "React", "logo": "/skills/react.png" },
+  { "name": "Tailwind", "logo": "/skills/tailwind.png" }
+]

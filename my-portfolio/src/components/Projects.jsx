@@ -5,20 +5,20 @@ import Project from "./Project";
 const projects = [
   {
     title: "A/S/L?",
-    route: "asl",
     thumbnail: "/projects/asl_thumb.png",
+    projectType: "Full-Stack Application",
     description:
-      "Party like it&apos;s 1998 with this throwback to the heydey of AOL chatrooms. Make a screenname, make a chat, make friends! Just don't tell anyone your real A/S/L (it was a simpler time.)",
+      "Party like it's 1998 with this throwback to the heydey of AOL chatrooms. Make a screenname, make a chatroom, make friends! Just don't tell anyone your real A/S/L (it was a simpler time.)",
     tech: [
-      "django",
-      "django channels",
-      "PostgresSQL",
-      "next js",
-      "react",
-      "python",
-      "js",
-      "html",
-      "css",
+      "Django",
+      "Django Channels",
+      "Postgre SQL",
+      "Next JS",
+      "React",
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
     ],
     url: "https://asl-front.vercel.app/",
     git: "https://github.com/donkeykong718/ASL-Front",
@@ -26,33 +26,40 @@ const projects = [
 
   {
     title: "Frankenstory",
-    route: "frankenstory",
     thumbnail: "/projects/frankenstory_thumb.jpeg",
-    description:
-      "An &lsquo;exquisite-corpse&rsquo; style collaborative storytelling game.",
-    tech: ["express", "mongoDB", "react", "python", "js", "html", "css"],
+    projectType: "Full-Stack Application",
+    description: "An 'exquisite-corpse' style collaborative storytelling game.",
+    tech: [
+      "Express JS",
+      "Mongo DB",
+      "React",
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
     url: "N/A",
     git: "https://github.com/donkeykong718/frankenstory",
   },
 
   {
     title: "Moo-Cha-Cha",
-    route: "moo-cha-cha",
     thumbnail: "/projects/moochacha-thumb.jpeg",
+    projectType: "Mobile App UI",
     description:
       "Collaborated with a UX design team to build a responsive mobile website for a fake ice cream company. Followed their specifications to the pixel.",
-    tech: ["react", "js", "html", "css"],
+    tech: ["React", "JavaScript", "HTML", "CSS"],
     url: "https://moo-cha-cha.vercel.app/",
     git: "https://github.com/donkeykong718/sei-uxdi",
   },
 
   {
     title: "BuyU",
-    route: "buyu",
     thumbnail: "/projects/buyu-thumb.png",
+    projectType: "MERN-Stack Application",
     description:
       "Building a web application in conjunction with the AFL-CIO that will identify whether any given product is made by union labor. As part of that, assisting in the creation of a national database of union-made projects.",
-    tech: ["express", "mongoDB", "js", "html", "css"],
+    tech: ["Express JS", "Mongo DB", "JavaScript", "HTML", "CSS"],
     url: "https://buyu.vercel.app/",
     git: "https://github.com/donkeykong718/BuyU",
   },
@@ -61,9 +68,10 @@ const projects = [
     title: "BuyPass",
     route: "buypass",
     thumbnail: "",
+    projectType: "Responsive Webpage",
     description:
-      "Built a web application that searches Amazon&apos;s database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies&apos; individual websites",
-    tech: ["vanilla js", "html", "css"],
+      "Built a web application that searches Amazon's database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies&apos; individual websites",
+    tech: ["JavaScript", "HTML", "CSS"],
     url: "N/A",
     git: "https://github.com/donkeykong718/Buy-Pass",
   },
