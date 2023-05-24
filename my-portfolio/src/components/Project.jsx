@@ -25,14 +25,20 @@ export default function Project({ project }) {
         <h3 className="text-2xl text-white tracking-wider text-center">
           {title}
         </h3>
-        <p className="pb-4 pt-2 text-white text-center">
-          PROP: type of project ex. &ldquo;react js&rdquo;
-        </p>
-        <Link href={`/projects//${route}`}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
-            More Info
-          </p>
-        </Link>
+        <p className="pb-4 pt-2 text-white text-center w-fit">{description}</p>
+        {/* <TechStack tech={tech} /> */}
+        <div className="flex justify-around">
+          <Link href={url}>
+            <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer min-w-fit w-[20%]">
+              Demo
+            </p>
+          </Link>
+          <Link href={git}>
+            <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer min-w-fit w-[20%]">
+              Code
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );

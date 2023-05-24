@@ -8,7 +8,7 @@ const projects = [
     route: "asl",
     thumbnail: "/projects/asl_thumb.png",
     description:
-      "Party like it&apos;s 1998 with this throwback to the heydey of AOL chatrooms. Make a screenname, make a chat, make friends! Just don't tell anyone your real A/S/L (it was a simpler time.)",
+      "Party like it's 1998 with this throwback to the heydey of AOL chatrooms. Make a screenname, make a chat, make friends! Just don't tell anyone your real A/S/L (it was a simpler time.)",
     tech: [
       "django",
       "django channels",
@@ -25,27 +25,15 @@ const projects = [
   },
 
   {
-    title: "Frankenstory",
-    route: "frankenstory",
-    thumbnail: "/projects/frankenstory_thumb.jpeg",
+    title: "BuyPass",
+    route: "buypass",
+    thumbnail: "",
     description:
-      "An &lsquo;exquisite-corpse&rsquo; style collaborative storytelling game.",
-    tech: ["express", "mongoDB", "react", "python", "js", "html", "css"],
-    url: "N/A",
-    git: "https://github.com/donkeykong718/frankenstory",
+      "Built a web application that searches Amazon&apos;s database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies&apos; individual websites",
+    tech: ["next js", "react", "tailwind", "html", "css"],
+    url: "https://buy-pass.vercel.app/",
+    git: "https://github.com/donkeykong718/Buy-Pass",
   },
-
-  {
-    title: "Moo-Cha-Cha",
-    route: "moo-cha-cha",
-    thumbnail: "/projects/moochacha-thumb.jpeg",
-    description:
-      "Collaborated with a UX design team to build a responsive mobile website for a fake ice cream company. Followed their specifications to the pixel.",
-    tech: ["react", "js", "html", "css"],
-    url: "https://moo-cha-cha.vercel.app/",
-    git: "https://github.com/donkeykong718/sei-uxdi",
-  },
-
   {
     title: "BuyU",
     route: "buyu",
@@ -56,16 +44,15 @@ const projects = [
     url: "https://buyu.vercel.app/",
     git: "https://github.com/donkeykong718/BuyU",
   },
-
   {
-    title: "BuyPass",
-    route: "buypass",
-    thumbnail: "",
+    title: "Moo-Cha-Cha",
+    route: "moo-cha-cha",
+    thumbnail: "/projects/MooChaCha-thumb.jpeg",
     description:
-      "Built a web application that searches Amazon&apos;s database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies&apos; individual websites",
-    tech: ["vanilla js", "html", "css"],
-    url: "N/A",
-    git: "https://github.com/donkeykong718/Buy-Pass",
+      "Collaborated with a UX design team to build a responsive mobile website for a fake ice cream company. Followed their specifications to the pixel.",
+    tech: ["react", "js", "html", "css"],
+    url: "https://moo-cha-cha.vercel.app/",
+    git: "https://github.com/donkeykong718/sei-uxdi",
   },
 ];
 
