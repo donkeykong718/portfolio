@@ -30,7 +30,7 @@ const projects = [
     thumbnail: "",
     description:
       "Built a web application that searches Amazon&apos;s database for a user-specified product, filters results by small-businesses, then provides user with a link to those companies&apos; individual websites",
-    tech: ["next js", "react", "tailwind", "html", "css"],
+    tech: ["Next js", "React", "Tailwind", "HTML", "CSS"],
     url: "https://buy-pass.vercel.app/",
     git: "https://github.com/donkeykong718/Buy-Pass",
   },
@@ -40,7 +40,7 @@ const projects = [
     projectType: "MERN-Stack Application",
     description:
       "Building a web application in conjunction with the AFL-CIO that will identify whether any given product is made by union labor. As part of that, assisting in the creation of a national database of union-made projects.",
-    tech: ["Express JS", "Mongo DB", "JavaScript", "HTML", "CSS"],
+    tech: ["Express js", "Mongo DB", "JavaScript", "HTML", "CSS"],
     url: "https://buyu.vercel.app/",
     git: "https://github.com/donkeykong718/BuyU",
   },
@@ -50,7 +50,7 @@ const projects = [
     thumbnail: "/projects/MooChaCha-thumb.jpeg",
     description:
       "Collaborated with a UX design team to build a responsive mobile website for a fake ice cream company. Followed their specifications to the pixel.",
-    tech: ["react", "js", "html", "css"],
+    tech: ["React js", "HTML", "CSS", "Notion"],
     url: "https://moo-cha-cha.vercel.app/",
     git: "https://github.com/donkeykong718/sei-uxdi",
   },
