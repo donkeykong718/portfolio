@@ -36,10 +36,10 @@ export default function Splash() {
             <br></br> Prior to that, I spent several years working in the film
             and television industry, where I often collaborated with tech
             departments to create and improve large-scale systems. I had the
-            pleasure of creating Marvel's first secure script distribution
+            pleasure of creating Marvel&apos;s first secure script distribution
             system, working closely with Netflix to improve their in-house
             production software, and automating the COVID testing protocols on
-            "Inventing Anna." <br></br>
+            &ldquo;Inventing Anna.&rdquo; <br></br>
             <br></br>I am excited to bring my unique combination of software
             engineering and production experience to new projects and
             challenges.

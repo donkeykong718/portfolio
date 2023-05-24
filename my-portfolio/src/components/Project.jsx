@@ -36,25 +36,25 @@ export default function Project({ project }) {
         </h3>
         {/* <h3 className="pt-1 pb-2 text-white text-center">{projectType}</h3> */}
         <p className="text-white text-left text-sm px-2 mb-2">{description}</p>
-
-        <div className="flex center-items justify-center">
-          <Link href={url} target="_blank">
-            <button className="px-4 py-1 mt-2 mr-4">Demo</button>
-          </Link>
-          <Link href={git} target="_blank">
-            <button className="px-4 py-1 mt-2">Code</button>
-          </Link>
-        </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-1 text-white">
               Technologies
             </p>
-            <div className="grid grid-cols-3">
+            <ul className="text-center">
               {tech.map((skill, index) => (
                 <TechStack skill={skill} key={index} />
               ))}
-            </div>
+            </ul>
+          </div>
+
+          <div className="flex center-items justify-center">
+            <Link href={url} target="_blank">
+              <button className="px-4 py-1 mt-2 mr-4">Demo</button>
+            </Link>
+            <Link href={git} target="_blank">
+              <button className="px-4 py-1 mt-2">Code</button>
+            </Link>
           </div>
         </div>
       </div>
