@@ -33,7 +33,7 @@ export default function Story() {
       <div className="col-start-3 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
         <Image
           className="rounded-xl"
-          src={"/assets/NYBG Headshot.jpg"}
+          src={"/assets/QueenMary2.jpg"}
           width={4032}
           height={3024}
           alt="headshot"

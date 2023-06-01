@@ -23,21 +23,21 @@ export default function Contact() {
             </div>
             <div>
               <h2 className="py-2">David Koll</h2>
-              <p>Full-stack Developer</p>
+              <p>Full-Stack Developer</p>
               <p className="py-4">
                 I am available for freelance or full-time positions. Contact me
                 and let&apos;s talk
               </p>
             </div>
             <div>
-              <p className="uppercase pt-8">Connect With Me</p>
+              <p className="uppercase pt-8 text-center">Connect With Me</p>
               <ContactBox mobile="false" />
             </div>
           </div>
         </div>
 
         {/* right */}
-        <div className="col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-xl lg:p4">
+        {/* <div className="col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-xl lg:p4">
           <div className="p-4">
             <form>
               <div>
@@ -90,7 +90,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex justify-center py-12">

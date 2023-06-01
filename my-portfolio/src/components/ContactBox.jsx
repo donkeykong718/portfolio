@@ -10,7 +10,7 @@ export default function ContactBox({ mobile }) {
     "flex items-center justify-between my-4 w-full sm:w-[80%]";
 
   const mobileLink =
-    "rounded-full shadow-lg shadow-gray-400 mx-3 p-6 cursor-pointer hover:scale-110 ease-in duration-300";
+    "rounded-full shadow-lg shadow-gray-400 mx-3 p-4 cursor-pointer hover:scale-110 ease-in duration-300";
   const deskLink =
     "rounded-full shadow-lg shadow-gray-400 mx-3 p-2 cursor-pointer hover:scale-105 ease-in duration-300";
 
