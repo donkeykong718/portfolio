@@ -10,7 +10,7 @@ export default function Home() {
       subheader: "What I've Built",
       navId: "projects",
     },
-    { header: "Resume", subheader: "Where I've Been", navId: "resume" },
+    { header: "Resume", subheader: "Where I've Worked", navId: "resume" },
     { header: "Contact", subheader: "Where I Can Be Found", navId: "contact" },
   ];
 

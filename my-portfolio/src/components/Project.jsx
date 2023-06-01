@@ -17,11 +17,11 @@ export default function Project({ project }) {
   return (
     // outside container
 
-    <div className="relative flex items-center justify-center h-auto w-screen shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] md:w-[45vw]">
+    <div className="relative flex items-center justify-center min-h-fit h-[50vh] w-screen shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#0c0b2a] to-[#3055a5] md:w-[45vw]">
       {/* Background/project image */}
 
       <Image
-        className="relativerounded-xl group-hover:opacity-10 w-[100] h-auto"
+        className="relative rounded-xl group-hover:opacity-10 w-auto max-h-[50vh]"
         src={thumbnail}
         width={1000}
         height={800}
@@ -30,15 +30,15 @@ export default function Project({ project }) {
 
       {/* hidden text block */}
 
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full max-h-100">
-        <h3 className="text-xl text-white tracking-wider text-center py-2">
+      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full max-h-100 p-3">
+        <h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200 tracking-wider text-center py-2">
           {title} | <span className="text-[.75em]">{projectType}</span>
         </h3>
         {/* <h3 className="pt-1 pb-2 text-white text-center">{projectType}</h3> */}
         <p className="text-white text-left text-sm px-2 mb-2">{description}</p>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1  p-4">
           <div className="p-2">
-            <p className="text-center font-bold pb-1 text-white">
+            <p className="text-center font-bold pb-1 text-amber-300">
               Technologies
             </p>
             <ul className="text-center">
@@ -47,15 +47,21 @@ export default function Project({ project }) {
               ))}
             </ul>
           </div>
-
-          <div className="flex center-items justify-center">
-            <Link href={url} target="_blank">
-              <button className="px-4 py-1 mt-2 mr-4">Demo</button>
-            </Link>
-            <Link href={git} target="_blank">
-              <button className="px-4 py-1 mt-2">Code</button>
-            </Link>
-          </div>
+        </div>
+        <div className="flex center-items justify-center bottom-0">
+          <Link href={url} target="_blank">
+            <button className="px-4 py-1 mt-2 mr-4 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
+              Demo
+            </button>
+          </Link>
+          <p className="inline text-white text-3xl bold mr-3 translate-y-1">
+            |
+          </p>
+          <Link href={git} target="_blank">
+            <button className="px-4 py-1 mt-2 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
+              Code
+            </button>
+          </Link>
         </div>
       </div>
     </div>

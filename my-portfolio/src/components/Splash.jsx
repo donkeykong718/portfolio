@@ -19,14 +19,15 @@ export default function Splash() {
           </h1>
           <div className="flex justify-center items-center">
             <Image
+              className="rounded-sm"
               src={"/assets/NYBG Headshot.jpg"}
               width={4032}
               height={3024}
               alt="headshot"
-              style={{ height: "200px", width: "auto" }}
+              style={{ height: "300px", width: "auto" }}
             />
           </div>
-          <h1 className="py-2 text-gray-700">A Full-stack Developer</h1>
+          <h1 className="py-2 text-gray-700">A Full-Stack Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] text-left m-auto">
             I am a versatile professional with a passion for software
             engineering. I recently completed a Software Engineering Fellowship
