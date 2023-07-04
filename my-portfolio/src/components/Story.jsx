@@ -18,11 +18,7 @@ export default function Story() {
           down and doing the damn thing, word games.
         </p>
 
-        <p className="py-2 text-gray-600">
-          Not so great at: selling myself, using buzzwords, allowing grammatical
-          mistakes to go unremarked upon, keeping my tongue out of my cheek,
-          accepting compliments, networking, basketball.
-        </p>
+        <p className="py-2 text-gray-600">Not so great at: basketball.</p>
         <Link href="/#projects">
           <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out some of my latest projects.
