@@ -49,14 +49,18 @@ export default function Project({ project }) {
           </div>
         </div>
         <div className="flex center-items justify-center bottom-0">
-          <Link href={url} target="_blank">
-            <button className="px-4 py-1 mt-2 mr-4 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
-              Demo
-            </button>
-          </Link>
-          <p className="inline text-white text-3xl bold mr-3 translate-y-1">
-            |
-          </p>
+          {url && (
+            <>
+              <Link href={url} target="_blank">
+                <button className="px-4 py-1 mt-2 mr-4 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
+                  Demo
+                </button>
+              </Link>
+              <p className="inline text-white text-3xl bold mr-3 translate-y-1">
+                |
+              </p>{" "}
+            </>
+          )}
           <Link href={git} target="_blank">
             <button className="px-4 py-1 mt-2 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
               Code
