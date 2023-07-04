@@ -17,7 +17,7 @@ export default function Project({ project }) {
   return (
     // outside container
 
-    <div className="relative flex items-center justify-center min-h-fit h-[50vh] w-screen shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#0c0b2a] to-[#3055a5] md:w-[45vw]">
+    <div className="relative flex items-center justify-center min-h-fit h-[50vh] w-screen shadow-xl shadow-gray-400 rounded-xl p-4 group md:w-[45vw]">
       {/* Background/project image */}
 
       <Image
@@ -30,7 +30,7 @@ export default function Project({ project }) {
 
       {/* hidden text block */}
 
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full max-h-100 p-3">
+      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-fit min-h-[100%] p-3 bg-gradient-to-r from-[#0c0b2a] to-[#3055a5] bg-transparent rounded-xl">
         <h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200 tracking-wider text-center py-2">
           {title} | <span className="text-[.75em]">{projectType}</span>
         </h3>
@@ -41,7 +41,7 @@ export default function Project({ project }) {
             <p className="text-center font-bold pb-1 text-amber-300">
               Technologies
             </p>
-            <ul className="text-center">
+            <ul className="flex flex-wrap justify-evenly">
               {tech.map((skill, index) => (
                 <TechStack skill={skill} key={index} />
               ))}
@@ -49,14 +49,18 @@ export default function Project({ project }) {
           </div>
         </div>
         <div className="flex center-items justify-center bottom-0">
-          <Link href={url} target="_blank">
-            <button className="px-4 py-1 mt-2 mr-4 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
-              Demo
-            </button>
-          </Link>
-          <p className="inline text-white text-3xl bold mr-3 translate-y-1">
-            |
-          </p>
+          {url && (
+            <>
+              <Link href={url} target="_blank">
+                <button className="px-4 py-1 mt-2 mr-4 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
+                  Demo
+                </button>
+              </Link>
+              <p className="inline text-white text-3xl bold mr-3 translate-y-1">
+                |
+              </p>{" "}
+            </>
+          )}
           <Link href={git} target="_blank">
             <button className="px-4 py-1 mt-2 shadow-md shadow-amber-400 bg-gradient-to-r from-[#0c0b2a] to-[#314571]">
               Code

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Story() {
   return (
-    <div className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8">
+    <div className="max-w-[1240px] m-auto sm:grid grid-cols-3 gap-8">
       <div className="col-span-2">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Story
@@ -18,11 +18,7 @@ export default function Story() {
           down and doing the damn thing, word games.
         </p>
 
-        <p className="py-2 text-gray-600">
-          Not so great at: selling myself, using buzzwords, allowing grammatical
-          mistakes to go unremarked upon, keeping my tongue out of my cheek,
-          accepting compliments, networking, basketball.
-        </p>
+        <p className="py-2 text-gray-600">Not so great at: basketball.</p>
         <Link href="/#projects">
           <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out some of my latest projects.
@@ -30,9 +26,9 @@ export default function Story() {
         </Link>
       </div>
 
-      <div className="col-start-3 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+      <div className="col-start-3 sm:w-full sm:h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
         <Image
-          className="rounded-xl"
+          className="rounded-xl max-h-[100%] w-auto"
           src={"/assets/QueenMary2.jpg"}
           width={4032}
           height={3024}

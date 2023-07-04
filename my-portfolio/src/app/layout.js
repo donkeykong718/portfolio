@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 
 export const metadata = {
-  title: "David Koll | Full-stack Developer",
+  title: "David Koll | Full-Stack Developer",
 };
 
 export default function RootLayout({ children }) {
