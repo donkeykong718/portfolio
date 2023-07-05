@@ -31,9 +31,9 @@ export default function Splash() {
           <p className="py-4 text-gray-600 max-w-[70%] text-left m-auto">
             I am a versatile professional with a passion for software
             engineering. I recently completed a Software Engineering Fellowship
-            at General Assembly, where I developed skills in front-end and
-            back-end web development, full-stack development, JavaScript, and
-            React.js.<br></br>
+            at General Assembly, where I developed skills in both front-end and
+            back-end web development, with a particular focus on React and
+            Next.js.<br></br>
             <br></br> Prior to that, I spent several years working in the film
             and television industry, where I often collaborated with tech
             departments to create and improve large-scale systems. I had the
