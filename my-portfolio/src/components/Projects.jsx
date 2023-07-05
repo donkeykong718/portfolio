@@ -21,7 +21,7 @@ const projects = [
     description:
       "Built in conjunction with the AFL-CIO as part of a larger project helping to identify whether any given product is made by union labor. This prototype database has full CRUD functionality, a functional front-end, and utilizes a barcode scanner to automatically pre-fill product information.",
     tech: ["Express.js", "MongoDB", "JavaScript", "HTML", "CSS"],
-    // url: "https://buyu.vercel.app/",
+    url: "https://buyu.vercel.app/",
     git: "https://github.com/donkeykong718/BuyU",
   },
   {
